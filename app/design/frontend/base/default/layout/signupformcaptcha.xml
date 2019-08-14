@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<layout version="0.1.0">
+    <customer_account_create>
+	<reference name="content">
+            <reference name="customer_form_register">
+                <action method="setTemplate"><template>signupformcaptcha/form.phtml</template></action>
+            </reference>
+        </reference>
+    </customer_account_create>
+</layout>

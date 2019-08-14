@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/nrgsignupformrecaptcha",
+    "type": "magento-module",
+    "license": "OSL-v1.1.0",
+    "homepage": "",
+    "description": "reCaptcha for sign up page",
+    "authors": [
+    {
+        "name": "Nikita Nautiyal",
+        "email": "nautiyal.nikita@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

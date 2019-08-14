@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<modules>
+		<Tri_SignupFormCaptcha>
+			<version>1.1.0</version>
+			<depends>
+				<Mage_Customer/>
+			</depends>
+		</Tri_SignupFormCaptcha>
+	</modules>
+
+    <global>
+        <blocks>
+          <signupformcaptcha>
+            <class>Tri_SignupFormCaptcha_Block</class>
+          </signupformcaptcha> 
+        </blocks>
+
+        <models>
+            <signupformcaptcha>
+                <class>Tri_SignupFormCaptcha_Model</class>
+            </signupformcaptcha>
+        </models>
+		
+		<helpers>
+			<signupformcaptcha>
+				<class>Tri_SignupFormCaptcha_Helper</class>
+			</signupformcaptcha>
+		</helpers>
+    </global>
+
+	<frontend>
+		<routers>
+            <customer>
+                <args>
+                    <modules>
+                        <signupformcaptcha before="Mage_Customer">Tri_SignupFormCaptcha</signupformcaptcha>
+                    </modules>
+                </args>
+            </customer>
+        </routers>
+        <translate>                                                                                                                                   
+            <modules>                                                                                                                                 
+                <Tri_SignupFormCaptcha>                                                                                                                 
+                    <files>                                                                                                                           
+                        <default>Tri_SignupFormCaptcha.csv</default>                                                                                    
+                    </files>                                                                                                                          
+                </Tri_SignupFormCaptcha>                                                                                                                
+            </modules>                                                                                                                                
+        </translate>
+        <layout>
+            <updates>
+                <signupformcaptcha module="Tri_SignupFormCaptcha">
+                    <file>signupformcaptcha.xml</file>
+                </signupformcaptcha>
+            </updates>
+        </layout>
+    </frontend>
+    
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <tri_options>
+                                            <title>Tri Signup Form Captcha Section</title>
+                                        </tri_options>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <translate>                                                                                                                                   
+            <modules>                                                                                                                                 
+                <Tri_SignupFormCaptcha>                                                                                                                 
+                    <files>                                                                                                                           
+                        <default>Tri_SignupFormCaptcha.csv</default>                                                                                    
+                    </files>                                                                                                                          
+                </Tri_SignupFormCaptcha>                                                                                                                
+            </modules>                                                                                                                                
+        </translate>
+	</adminhtml>
+</config>

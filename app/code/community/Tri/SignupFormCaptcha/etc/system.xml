@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+
+<!-- <config>
+	<tabs>
+		<tri translate="label">
+			<label>tri</label>
+			<sort_order>1</sort_order>
+		</tri>
+    <sections>
+        <tri translate="label" module="adminhtml">
+			<label>SignUpCaptcha</label>
+            <tab>tri</tab>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment">
+                    <label>Signup Form Captcha</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>100</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label comment">
+                            <label>Enable Captcha</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <backend_model>contacts/system_config_backend_links</backend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <public_key translate="label comment">
+                            <label>Public Key</label>
+                            <comment>You got this from the signup page: https://www.google.com/recaptcha/admin/create</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </public_key>
+                        <private_key translate="label comment">
+                            <label>Private Key</label>
+                            <comment>You got this from the signup page: https://www.google.com/recaptcha/admin/create</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </private_key>
+                        <theme translate="label comment">
+                            <label>reCaptcha Theme</label>
+                            <comment>Customizing the Look of reCAPTCHA</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>contactsformcaptcha/system_config_source_dropdown_theme</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </theme>
+                        <lang translate="label comment">
+                            <label>reCaptcha Language</label>
+                            <comment>Which language is used in the reCaptcha interface</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>contactsformcaptcha/system_config_source_dropdown_lang</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </lang>
+                    </fields>
+                </general>
+            </groups>
+		</tri>
+    </sections>
+</config> -->
+
+<config>
+    <tabs>
+        <tri translate="label" module="signupformcaptcha">
+            <label>Tri Captcha</label>
+            <sort_order>200</sort_order>
+        </tri>
+    </tabs>
+    <sections>
+        <tri_options translate="label" module="signupformcaptcha">
+            <label>Sign Up Captcha</label>
+            <tab>tri</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <general translate="label comment">
+                    <label>General</label>
+                    <sort_order>50</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+						<enabled translate="label comment">
+                            <label>Enable Captcha</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <backend_model>contacts/system_config_backend_links</backend_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <public_key translate="label comment">
+                            <label>Public Key</label>
+                            <comment>You got this from the signup page: https://www.google.com/recaptcha/admin/create</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </public_key>
+                        <private_key translate="label comment">
+                            <label>Private Key</label>
+                            <comment>You got this from the signup page: https://www.google.com/recaptcha/admin/create</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </private_key>
+                       <theme translate="label comment">
+                            <label>reCaptcha Theme</label>
+                            <comment>Customizing the Look of reCAPTCHA</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>signupformcaptcha/system_config_source_dropdown_theme</source_model>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </theme>
+                       <lang translate="label comment">
+                            <label>reCaptcha Language</label>
+                            <comment>Which language is used in the reCaptcha interface</comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>signupformcaptcha/system_config_source_dropdown_lang</source_model>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </lang> 
+                    </fields>
+                </general>
+            </groups>
+        </tri_options>
+    </sections>
+</config>
