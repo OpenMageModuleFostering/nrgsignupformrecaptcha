@@ -1,5 +1,5 @@
 {
-    "name": "OpenMageModuleFostering\/nrgsignupformrecaptcha",
+    "name": "openmage-module-fostering\/nrgsignupformrecaptcha",
     "type": "magento-module",
     "license": "OSL-v1.1.0",
     "homepage": "",
